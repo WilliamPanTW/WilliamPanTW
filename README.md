@@ -9,8 +9,10 @@
 ## About me
 - 👨‍💻 Embedded Engineer
 - 🔭 Turning limited resources into consumer products (Smart home devices)
-- 📄 **Research:** First author, IEEE ICC 2026 (on-device LLM reasoning for IoT DDoS detection) · Co-author, ICNC 2026
-- 📫 Reach me: William910122@gmail.com
+- 📄 **Research:**
+  - First author, IEEE ICC 2026: [Rethinking On-Device LLM Reasoning: Why Analogical Mapping Outperforms Abstract Thinking for IoT DDoS Detection](https://arxiv.org/abs/2601.14343)
+  - Co-author, ICNC 2026: [Structured Lightweight Speech Summarization with On-Device LLMs and Retrieval-Augmented Refinement](https://ieeexplore.ieee.org/abstract/document/11416868)
+- 📫 Reach me: [William910122@gmail.com](mailto:William910122@gmail.com)
 
 ## 🛠 Tech Stack
 
