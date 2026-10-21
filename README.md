@@ -43,5 +43,5 @@
 
 <p align="left">
   <img height="170" src="https://github-readme-stats.vercel.app/api?username=WilliamPanTW&show_icons=true&hide_border=true&include_all_commits=true&bg_color=2d333b&title_color=ffffff&text_color=c9d1d9&icon_color=58a6ff" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=WilliamPanTW&layout=compact&hide_border=true&langs_count=8&bg_color=2d333b&title_color=ffffff&text_color=c9d1d9" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=WilliamPanTW&layout=compact&hide_border=true&langs_count=8&hide=jupyter%20notebook,html,css&size_weight=0.5&count_weight=0.5&bg_color=2d333b&title_color=ffffff&text_color=c9d1d9"/>
 </p>
