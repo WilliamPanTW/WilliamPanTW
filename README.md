@@ -1,4 +1,4 @@
-# Hi, I'm William !👋
+# Hi, I'm William👋
 <p align="left">
   <a href="https://williampantw.github.io/Will_resume/"><img src="https://img.shields.io/badge/Portfolio-222222?style=for-the-badge&logo=githubpages&logoColor=white" /></a>
   <a href="https://scholar.google.com/citations?user=YOUR_ID"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" /></a>
