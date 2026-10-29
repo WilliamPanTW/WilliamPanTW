@@ -12,22 +12,23 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - name: Fetch cards (keep old file if fetch fails)
-        run: |
-          mkdir -p assets
-          fetch() {
-            if curl -sf --max-time 60 "$1" -o tmp.svg \
-               && grep -q "<svg" tmp.svg \
-               && ! grep -q "Something went wrong" tmp.svg; then
-              mv tmp.svg "$2"; echo "updated $2"
-            else
-              rm -f tmp.svg; echo "kept old $2"
-            fi
-          }
-          fetch "https://github-readme-stats.vercel.app/api?username=WilliamPanTW&show_icons=true&hide_border=true&include_all_commits=true&bg_color=2d333b&title_color=ffffff&text_color=c9d1d9&icon_color=58a6ff" assets/stats.svg
-          fetch "https://github-readme-stats.vercel.app/api/top-langs/?username=WilliamPanTW&layout=compact&hide_border=true&langs_count=8&hide=jupyter%20notebook,html,css&size_weight=0.5&count_weight=0.5&bg_color=2d333b&title_color=ffffff&text_color=c9d1d9" assets/langs.svg
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=WilliamPanTW&show_icons=true&hide_border=true&include_all_commits=true&bg_color=2d333b&title_color=ffffff&text_color=c9d1d9&icon_color=58a6ff
+          path: assets/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=WilliamPanTW&layout=compact&hide_border=true&langs_count=8&hide=jupyter%20notebook,html,css&size_weight=0.5&count_weight=0.5&bg_color=2d333b&title_color=ffffff&text_color=c9d1d9
+          path: assets/langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit if changed
         run: |
